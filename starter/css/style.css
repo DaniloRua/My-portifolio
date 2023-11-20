@@ -1,3 +1,7 @@
+:root{
+  --main-theme:rgb(241, 165, 26);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +11,57 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: black;
+}
+
+header{
+  border-bottom: 5px solid  var(--main-theme);
+  height: 15vh;
+  width: 100%;
+  padding: 0 5%;
+  background-color:  #1c1e1f;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+
+}
+.name{
+  display: inline-block;
+  font-size: 40px;
+  width: 300px;
+  height: 100%;
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links{
+  padding: 25px 0;
+}
+.links li{
+  display: inline-block;
+  margin: 0 10px;
+}
+.links li a {
+  text-decoration: none;
+  color: white;
+
+}
+.links li a:hover{
+ color: var(--main-theme);
+ transition: 0.3s ease-in-out;
+}
+
+.name:hover{
+  scale: 1.05;
+  transition: 0.3s ease-in-out;
+  color: var(--main-theme);
+}
+
+section{
+
 }
 
 h1,
@@ -21,3 +76,4 @@ h6 {
 p {
   margin: 0;
 }
+
