@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 body {
@@ -11,28 +12,25 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: black;
+  background-color: #1c1e1f;
+
 }
 
 header{
   border-bottom: 5px solid  var(--main-theme);
-  height: 15vh;
-  width: 100%;
-  padding: 0 5%;
-  background-color:  #1c1e1f;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: white;
-
+  height: 10vh;
+  border-bottom: 5px solid var(--main-theme);
+  margin: 20px;
 }
 .name{
   display: inline-block;
-  font-size: 40px;
+  font-size: 30px;
   width: 300px;
   height: 100%;
 
 }
 nav{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,17 +45,104 @@ nav{
 .links li a {
   text-decoration: none;
   color: white;
+  font-size: 18px;
 
 }
 .links li a:hover{
  color: var(--main-theme);
  transition: 0.3s ease-in-out;
 }
-
 .name:hover{
-  scale: 1.05;
   transition: 0.3s ease-in-out;
   color: var(--main-theme);
+}
+
+.hero-banner {
+  padding: 0 auto;
+  margin: 20px;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.introduction-text{
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 500px;
+  text-align: start;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+.introduction-text h1{
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.introduction-text h1:hover{
+  color: var(--main-theme);
+  transition: 0.3s ease-in-out;
+  
+}
+.introduction-text p {
+  color: #fff;
+  text-justify:distribute-all-lines;
+  
+
+}
+
+.my-picture{
+  background-image: url(../images/20211206_140005.jpg);
+  height: 320px;
+  width: 320px;
+  background-size: cover;
+  border-radius: 16px;
+
+}
+.my-picture:hover{
+  scale: 1.03;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 0px 26px 16px  var(--main-theme);
+}
+
+.page-wrapper{
+  padding: 0 auto;
+  margin: 20px;
+  border: 1px red solid;
+  color: #fff;
+
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 500px;
+  text-align: start;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.page-section{
+  padding: 0 auto;
+  margin: 20px;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+#front-end-picture{
+  background-image: url(../images/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);
+  height: 320px;
+  width: 320px;
+  background-size: cover;
+  border-radius: 16px;
 }
 
 section{
@@ -71,6 +156,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: #fff;
 }
 
 p {
