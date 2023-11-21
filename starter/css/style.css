@@ -48,13 +48,14 @@ nav{
   font-size: 18px;
 
 }
+.introduction-text p span:hover,
+.introduction-text h1:hover,
+h2:hover,
+.name:hover,
 .links li a:hover{
  color: var(--main-theme);
  transition: 0.3s ease-in-out;
-}
-.name:hover{
-  transition: 0.3s ease-in-out;
-  color: var(--main-theme);
+
 }
 
 .hero-banner {
@@ -68,6 +69,7 @@ nav{
   display: flex;
   justify-content: space-evenly;
 }
+
 .introduction-text{
   display: flex;
   flex-direction: column;
@@ -82,16 +84,9 @@ nav{
   margin-bottom: 40px;
 }
 
-.introduction-text h1:hover{
-  color: var(--main-theme);
-  transition: 0.3s ease-in-out;
-  
-}
 .introduction-text p {
   color: #fff;
   text-justify:distribute-all-lines;
-  
-
 }
 
 .my-picture{
@@ -144,11 +139,28 @@ nav{
   background-size: cover;
   border-radius: 16px;
 }
-
-section{
-
+.work{
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 500px;
+  text-align: start;
+  justify-content: space-evenly;
+  font-size: 20px;
+  border: 1px red solid;
 }
 
+
+.work h2{
+  border: 1px red solid;
+}
+
+
+
+section{
+  border: 1px red solid;
+}
+span,
 h1,
 h2,
 h3,
