@@ -30,18 +30,21 @@ header{
   height: 100%;
 
 }
+
 nav{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .links{
   padding: 25px 0;
 }
 .links li{
   display: inline-block;
   margin: 0 10px;
+  color: #fff;
 }
 .links li a {
   text-decoration: none;
@@ -49,6 +52,7 @@ nav{
   font-size: 18px;
 
 }
+.links li:hover,
 .introduction-text p span:hover,
 .introduction-text h1:hover,
 h2:hover,
@@ -165,10 +169,12 @@ h2:hover,
 
 
 .text-inside{
-  margin-left: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
   width: 40%;
   height: 35%;
-  border-radius: 15px;
+  border-left: 5px solid var(--main-theme);
+  border-bottom: 5px solid var(--main-theme);
 }
 .text-inside h2{
   font-size: 25px;
@@ -188,13 +194,14 @@ h2:hover,
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  width: 450px;
+  width: 470px;
   height: 220px;
   border-radius: 15px;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
+
 }
 
 .grid-units:hover{
@@ -214,27 +221,22 @@ h2:hover,
   background-image: url(../images/Dark\ mode.png);
   background-size: contain;
 }
-
 #TODO{
   grid-area: todo;
   background-image: url(../images/TODO.png);
   background-size: contain;
 }
-
 #habit-tracker{
   grid-area: habit-tracker;
   background-image: url(../images/Habit.png);
   background-size: contain;
 
 }
-
 #contact{
-  border: 1px red solid;
+  text-align: center;
+  height: 15vh;
 }
 
-section{
-
-}
 span,
 h1,
 h2,
