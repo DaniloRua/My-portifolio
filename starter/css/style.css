@@ -1,5 +1,6 @@
 :root{
   --main-theme:rgb(241, 165, 26);
+  --main-theme-transparent:rgba(241, 166, 26, 0.684);
 }
 
 * {
@@ -106,8 +107,6 @@ h2:hover,
 .page-wrapper{
   padding: 0 auto;
   margin: 20px;
-  border: 1px red solid;
-  color: #fff;
 
 }
 
@@ -139,26 +138,102 @@ h2:hover,
   background-size: cover;
   border-radius: 16px;
 }
-.work{
+
+#work{
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  height: 320px;
-  width: 500px;
-  text-align: start;
-  justify-content: space-evenly;
   font-size: 20px;
-  border: 1px red solid;
+}
+#work h2{
+  margin: 0 auto;
+
 }
 
+.grid{
+  align-items: center;
+  width: 80%;
+  height: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+   "pokememory darkmode"
+  "todo habit-tracker";
+} 
 
-.work h2{
-  border: 1px red solid;
+
+.text-inside{
+  margin-left: 5px;
+  width: 40%;
+  height: 35%;
+  border-radius: 15px;
+}
+.text-inside h2{
+  font-size: 25px;
+  color: var(--main-theme);
+}
+.text-inside h4{
+  font-size: 15px;
+  color: var(--main-theme);
+}
+.text-inside:hover{
+
+  color: #fff;
+  transition: 1s ease-in-out;
 }
 
+.grid-units{
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 450px;
+  height: 220px;
+  border-radius: 15px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
 
+.grid-units:hover{
+  scale: 1.2;
+  transition: 0.5s ease-in-out;
+}
+
+#pokememory{
+  grid-area: pokememory;
+  background-image: url(../images/pokememory3.png);
+  background-size: contain;
+ 
+}
+
+#dark-mode{
+  grid-area: darkmode;
+  background-image: url(../images/Dark\ mode.png);
+  background-size: contain;
+}
+
+#TODO{
+  grid-area: todo;
+  background-image: url(../images/TODO.png);
+  background-size: contain;
+}
+
+#habit-tracker{
+  grid-area: habit-tracker;
+  background-image: url(../images/Habit.png);
+  background-size: contain;
+
+}
+
+#contact{
+  border: 1px red solid;
+}
 
 section{
-  border: 1px red solid;
+
 }
 span,
 h1,
