@@ -1,47 +1,45 @@
-:root{
-  --main-theme:rgb(241, 165, 26);
-  --main-theme-transparent:rgba(241, 166, 26, 0.684);
+:root {
+  --main-theme: rgb(241, 165, 26);
+  --main-theme-transparent: rgba(241, 166, 26, 0.684);
 }
 
 * {
   box-sizing: border-box;
-
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
   background-color: #1c1e1f;
-
 }
 
-header{
-  border-bottom: 5px solid  var(--main-theme);
+header {
+  border-bottom: 5px solid var(--main-theme);
   height: 10vh;
   border-bottom: 5px solid var(--main-theme);
   margin: 20px;
 }
-.name{
+.name {
   display: inline-block;
   font-size: 30px;
   width: 300px;
   height: 100%;
-
 }
 
-nav{
+nav {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.links{
+.links {
   padding: 25px 0;
 }
-.links li{
+.links li {
   display: inline-block;
   margin: 0 10px;
   color: #fff;
@@ -50,17 +48,15 @@ nav{
   text-decoration: none;
   color: white;
   font-size: 18px;
-
 }
 .links li:hover,
 .introduction-text p span:hover,
 .introduction-text h1:hover,
 h2:hover,
 .name:hover,
-.links li a:hover{
- color: var(--main-theme);
- transition: 0.3s ease-in-out;
-
+.links li a:hover {
+  color: var(--main-theme);
+  transition: 0.3s ease-in-out;
 }
 
 .hero-banner {
@@ -75,7 +71,7 @@ h2:hover,
   justify-content: space-evenly;
 }
 
-.introduction-text{
+.introduction-text {
   display: flex;
   flex-direction: column;
   height: 320px;
@@ -84,37 +80,35 @@ h2:hover,
   justify-content: space-evenly;
   font-size: 20px;
 }
-.introduction-text h1{
+.introduction-text h1 {
   font-size: 40px;
   margin-bottom: 40px;
 }
 
 .introduction-text p {
   color: #fff;
-  text-justify:distribute-all-lines;
+  text-justify: distribute-all-lines;
 }
 
-.my-picture{
+.my-picture {
   background-image: url(../images/20211206_140005.jpg);
   height: 320px;
   width: 320px;
   background-size: cover;
   border-radius: 16px;
-
 }
-.my-picture:hover{
+.my-picture:hover {
   scale: 1.03;
   transition: 0.5s ease-in-out;
-  box-shadow: 0px 0px 26px 16px  var(--main-theme);
+  box-shadow: 0px 0px 26px 16px var(--main-theme);
 }
 
-.page-wrapper{
+.page-wrapper {
   padding: 0 auto;
   margin: 20px;
-
 }
 
-#about{
+#about {
   display: flex;
   flex-direction: column;
   height: 320px;
@@ -124,7 +118,7 @@ h2:hover,
   font-size: 20px;
 }
 
-.page-section{
+.page-section {
   padding: 0 auto;
   margin: 20px;
   height: 70vh;
@@ -135,26 +129,19 @@ h2:hover,
   display: flex;
   justify-content: space-evenly;
 }
-#front-end-picture{
-  background-image: url(../images/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);
-  height: 320px;
-  width: 320px;
-  background-size: cover;
-  border-radius: 16px;
-}
 
-#work{
+
+#work {
   height: 90vh;
   display: flex;
   flex-direction: column;
   font-size: 20px;
 }
-#work h2{
+#work h2 {
   margin: 0 auto;
-
 }
 
-.grid{
+.grid {
   align-items: center;
   width: 80%;
   height: 90%;
@@ -163,34 +150,32 @@ h2:hover,
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-   "pokememory darkmode"
-  "todo habit-tracker";
-} 
+    "pokememory darkmode"
+    "todo habit-tracker";
+}
 
-
-.text-inside{
+.text-inside {
   padding-left: 5px;
   padding-bottom: 5px;
   width: 40%;
   height: 35%;
-  border-left: 5px solid var(--main-theme);
-  border-bottom: 5px solid var(--main-theme);
+  background-color: var(--main-theme-transparent);
+  border-radius: 15px;
 }
-.text-inside h2{
+.text-inside h2 {
   font-size: 25px;
-  color: var(--main-theme);
+  color:#fff;
 }
-.text-inside h4{
+.text-inside h4 {
   font-size: 15px;
-  color: var(--main-theme);
+  color:#fff;
 }
-.text-inside:hover{
-
+.text-inside:hover {
   color: #fff;
   transition: 1s ease-in-out;
 }
 
-.grid-units{
+.grid-units {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -201,38 +186,35 @@ h2:hover,
   display: flex;
   flex-direction: column;
   justify-content: end;
-
 }
 
-.grid-units:hover{
+.grid-units:hover {
   scale: 1.2;
   transition: 0.5s ease-in-out;
 }
 
-#pokememory{
+#pokememory {
   grid-area: pokememory;
   background-image: url(../images/pokememory3.png);
   background-size: contain;
- 
 }
 
-#dark-mode{
+#dark-mode {
   grid-area: darkmode;
   background-image: url(../images/Dark\ mode.png);
   background-size: contain;
 }
-#TODO{
+#TODO {
   grid-area: todo;
   background-image: url(../images/TODO.png);
   background-size: contain;
 }
-#habit-tracker{
+#habit-tracker {
   grid-area: habit-tracker;
   background-image: url(../images/Habit.png);
   background-size: contain;
-
 }
-#contact{
+#contact {
   text-align: center;
   height: 15vh;
 }
@@ -252,3 +234,117 @@ p {
   margin: 0;
 }
 
+@media screen and (max-width: 800px) {
+  header{
+   
+    display: flex;
+    flex-direction: column;
+    
+  }
+  header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 10vh;
+  
+  }
+
+  .name {
+    font-size: 30px;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .links {
+   padding: 0;
+    margin: 0;;
+  }
+  .links li{
+    margin: 0px 9px ;
+  }
+  .links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .hero-banner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .my-picture {
+    background-image: url(../images/20211206_140005.jpg);
+    height: 320px;
+    width: 320px;
+    background-size: cover;
+    border-radius: 16px;
+    background-position: center;
+  }
+  .introduction-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: start;
+    font-size: 20px;
+    align-items: center;
+  }
+  .introduction-text h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .introduction-text p {
+    text-align: center;
+  }
+.my-picture {
+  height: 50vh;
+  width:80%;
+}
+#work {
+  margin-top: 40px;
+  height: 90vh;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+ .grid {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.grid-units{
+margin: 0;
+width: 350px;
+height: 250px;
+background-size: cover;
+background-size: cover;
+background-position: center;
+}
+
+.grid-units:hover{
+  scale: 1;
+}
+.text-inside {
+  height: 35%;
+  width: 35%;
+}
+.text-inside h2 {
+  font-size: 17px;
+}
+.text-inside h4 {
+  font-size: 10px;
+}
+#contact {
+  height: 10vh;
+  margin-top: 50px;
+}
+}
