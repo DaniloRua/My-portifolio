@@ -191,7 +191,6 @@ h2:hover,
 .grid-units a {
   height: 100%;
   width: 100%;
-  border: 5px red solid;
 }
 .grid-units:hover {
   scale: 1.2;
