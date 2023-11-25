@@ -130,9 +130,8 @@ h2:hover,
   justify-content: space-evenly;
 }
 
-
 #work {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: 20px;
@@ -144,31 +143,32 @@ h2:hover,
 .grid {
   align-items: center;
   width: 80%;
-  height: 90%;
+  height: 100%;
   display: grid;
   margin: 0 auto;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
+    "not-found not-found"
     "pokememory darkmode"
     "todo habit-tracker";
 }
 
 .text-inside {
+  -webkit-text-stroke: 0.8px black;
   padding-left: 5px;
   padding-bottom: 5px;
   width: 40%;
   height: 35%;
-  background-color: var(--main-theme-transparent);
   border-radius: 15px;
 }
 .text-inside h2 {
   font-size: 25px;
-  color:#fff;
+  color: #fff;
 }
 .text-inside h4 {
   font-size: 15px;
-  color:#fff;
+  color: #fff;
 }
 .text-inside:hover {
   color: #fff;
@@ -179,10 +179,9 @@ h2:hover,
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  width: 470px;
+  width: 450px;
   height: 220px;
   border-radius: 15px;
-  margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -219,8 +218,28 @@ h2:hover,
   background-size: contain;
 }
 #contact {
+  margin-top: 30px;
   text-align: center;
   height: 15vh;
+}
+.contact-links {
+  padding: 0;
+}
+#not-found {
+  grid-area: not-found;
+  background-image: url(/starter/images/danilorua.github.io_Page-not-found_.png);
+  width: 90%;
+  background-position: center;
+}
+#not-found div {
+  width: 200px;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: auto;
 }
 
 span,
@@ -239,18 +258,15 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-  header{
-   
+  header {
     display: flex;
     flex-direction: column;
-    
   }
-  header nav{
+  header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     max-height: 10vh;
-  
   }
 
   .name {
@@ -263,11 +279,11 @@ p {
     height: 100%;
   }
   .links {
-   padding: 0;
-    margin: 0;;
+    padding: 0;
+    margin: 0;
   }
-  .links li{
-    margin: 0px 9px ;
+  .links li {
+    margin: 0px 9px;
   }
   .links li a {
     text-decoration: none;
@@ -305,50 +321,49 @@ p {
   .introduction-text p {
     text-align: center;
   }
-.my-picture {
-  height: 50vh;
-  width:80%;
-}
-#work {
-  margin-top: 40px;
-  height: 90vh;
-  font-size: 20px;
-  justify-content: space-between;
-}
+  .my-picture {
+    height: 50vh;
+    width: 80%;
+  }
+  #work {
+    margin-top: 40px;
+    height: 90vh;
+    font-size: 20px;
+    justify-content: space-between;
+  }
+  .grid {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .grid-units {
+    margin: 0;
+    width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+  }
 
- .grid {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-.grid-units{
-margin: 0;
-width: 350px;
-height: 250px;
-background-size: cover;
-background-size: cover;
-background-position: center;
-}
-
-.grid-units:hover{
-  scale: 1;
-}
-.text-inside {
-  height: 35%;
-  width: 35%;
-}
-.text-inside h2 {
-  font-size: 17px;
-}
-.text-inside h4 {
-  font-size: 10px;
-}
-#contact {
-  height: 10vh;
-  margin-top: 50px;
-}
+  .grid-units:hover {
+    scale: 1;
+    transition: none;
+  }
+  .text-inside {
+    height: 35%;
+    width: 35%;
+  }
+  .text-inside h2 {
+    font-size: 17px;
+  }
+  .text-inside h4 {
+    font-size: 10px;
+  }
+  #contact {
+    height: 10vh;
+    margin-top: 50px;
+  }
 }
