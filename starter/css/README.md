@@ -3,6 +3,7 @@
 This is a simple portfolio website created using only HTML and CSS. It showcases my skills, projects, and experiences in a clean and minimalistic design. Feel free to use this as a template for your own portfolio.
 
 ## Demo
+![Screenshot](/starter/images/screenshot.png)
 
 You can see a live demo of the portfolio [here](https://danilorua.github.io/My-portifolio/).
 
