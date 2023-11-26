@@ -186,6 +186,7 @@ h2:hover,
 .grid-units a {
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 .grid-units:hover {
   scale: 1.2;
@@ -223,7 +224,7 @@ h2:hover,
 }
 #not-found {
   grid-area: not-found;
-  background-image: url(/starter/images/danilorua.github.io_Page-not-found_.png);
+  background-image: url(/starter/images/notfound.png);
   width: 90%;
   background-position: center;
 }
@@ -234,7 +235,6 @@ h2:hover,
 .page-wrapper {
   display: flex;
   flex-direction: column;
-
   height: auto;
 }
 
