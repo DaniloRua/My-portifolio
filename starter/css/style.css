@@ -223,8 +223,8 @@ h2:hover,
 }
 #not-found {
   grid-area: not-found;
-  background-image: url(/starter/images/notfound.png);
-  width: 95%;
+  background-image: url(../images/notfound.png);
+
   background-position: center;
 }
 #not-found div {
