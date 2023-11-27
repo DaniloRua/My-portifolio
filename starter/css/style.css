@@ -196,23 +196,22 @@ h2:hover,
 #pokememory {
   grid-area: pokememory;
   background-image: url(../images/pokememory3.png);
-  background-size: contain;
+ 
 }
 
 #dark-mode {
   grid-area: darkmode;
   background-image: url(../images/Dark\ mode.png);
-  background-size: contain;
+
 }
 #TODO {
   grid-area: todo;
   background-image: url(../images/TODO.png);
-  background-size: contain;
+
 }
 #habit-tracker {
   grid-area: habit-tracker;
   background-image: url(../images/Habit.png);
-  background-size: contain;
 }
 #contact {
   margin-top: 30px;
@@ -225,7 +224,7 @@ h2:hover,
 #not-found {
   grid-area: not-found;
   background-image: url(/starter/images/notfound.png);
-  width: 90%;
+  width: 95%;
   background-position: center;
 }
 #not-found div {
