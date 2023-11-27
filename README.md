@@ -20,5 +20,3 @@ This is an initial version of my portfolio. Many more features and improvements 
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for your own portfolio.
-
-### MIT License
